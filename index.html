@@ -85,11 +85,11 @@
                     <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target="#navbar-collapse-RCSB">
                         <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Logo</a>
+                    <a class="navbar-brand" href="#">ORFanID</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse-RCSB" style="max-height: 420px;">
                     <ul class="nav navbar-nav pull-left">
-                        <li class="dropdown" id="headnav_deposit">
+                        <!-- <li class="dropdown" id="headnav_deposit">
                             <a class="dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">Link 1&nbsp;<b class="caret"></b></a>
                             <div class="dropdown-menu multi-column" id="DepositDropdownNav">
                                 <div class="row">
@@ -101,9 +101,18 @@
                                     </div>
                                 </div>
                             </div>
+                        </li> -->
+                        <li class="dropdown" id="">
+                            <a class="dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">Deposit</b></a>
                         </li>
                         <li class="dropdown" id="">
-                            <a class="dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">Link 2</b></a>
+                            <a class="dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">Search</b></a>
+                        </li>
+                        <li class="dropdown" id="">
+                            <a class="dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">Documentation</b></a>
+                        </li>
+                        <li class="dropdown" id="">
+                            <a class="dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">Careers</b></a>
                         </li>
                     </ul>
                 </div>
@@ -172,7 +181,7 @@
                             >
                                 
                             </a>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            Biological Macromolecular Structures Enabling Breakthroughs in Research and Education
                         </h2>
                         <div class="clearfix"></div>
                     </div>
@@ -184,7 +193,7 @@
                                     <tr>
                                         <td class="search-bar-input"><input type="text" id="11" placeholder="Enter search terms." autocomplete="off" spellcheck="false" /></td>
                                         <td>
-                                            <div id="search-icon"><span class="glyphicon glyphicon-search search-btn"></span></div>
+                                            <div id="search-icon" style="width: 100%;"><span class="glyphicon glyphicon-search search-btn"></span></div>
                                         </td>
                                     </tr>
                                     <tr id="search-bar-links1">
@@ -200,12 +209,18 @@
                 </div>
                 <ul class="hidden-xs hidden-print" id="PDBmembers">
                     <li>
-                        <a href=""><img id="" style="width: 95px;" src="data:image/png;base64,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" data-src="" alt="" /></a>
+                        <a href=""><img id="" style="width: 95px;" src="https://cdn.rcsb.org/rcsb-pdb/v2/common/images/pdb101Logo.png" data-src="" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img id="" style="width: 95px;" src="https://cdn.rcsb.org/rcsb-pdb/v2/common/images/Logo_NDB.png" data-src="" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img id="" style="width: 95px;" src="https://cdn.rcsb.org/rcsb-pdb/v2/common/images/Logo_wwPDBFoundation.png" data-src="" alt="" /></a>
                     </li>
                 </ul>
-                <ul class="fa-ul pdb50">
+                <ul class="fa-ul pdb50" style="right: 15px;">
                     <li>
-                        <a href="" rel="noopener" alt=""><img style="width: 300px;" src="https://contactcentresummit.co.uk/wp-content/uploads/2014/11/Dummy-banner-homepage.png" /></a>
+                        <a href="" rel="noopener" alt=""><img style="width: 300px;" src="https://cdn.rcsb.org/rcsb-pdb/v2/home/images/pdb50-branding/logo50-gold-long.svg" /></a>
                     </li>
                 </ul>
                 <div id="socialmedia_section" style="display: none;">
@@ -280,7 +295,7 @@
             <div class="row navy">
                 <div class="col-sm-4"></div>
                 <div class="col-md-8 col-sm-8 vertPosition alignRight">
-                    <span class="tagline padRight">Some sample title text</span><a class="btn btn-sm btn-info" href="" role="button">Sample Button</a>
+                    <span class="tagline padRight">Developers: Join the ORFanID Team</span><a class="btn btn-sm btn-info" href="" role="button">Explore Open Positions</a>
                 </div>
             </div>
             <div id="homepage_panelslides">
@@ -290,17 +305,23 @@
                             <li class="active" id="mainnav_welcome">
                                 <a href="" aria-label="Welcome"><span class="glyphicon glyphicon-bookmark"></span><span class="mainnav_title hidden-xs">Welcome</span></a>
                             </li>
-                            <li class="" id="mainnav_welcome">
-                                <a href="" aria-label="Welcome"><span class="glyphicon glyphicon-bookmark"></span><span class="mainnav_title hidden-xs">Deposit</span></a>
+                            <li class="" id="">
+                                <a href="" aria-label="Welcome"><span class="glyphicon glyphicon-cloud-upload"></span><span class="mainnav_title hidden-xs">Deposit</span></a>
                             </li>
-                            <li class="" id="mainnav_welcome">
-                                <a href="" aria-label="Welcome"><span class="glyphicon glyphicon-bookmark"></span><span class="mainnav_title hidden-xs">Search</span></a>
+                            <li class="" id="">
+                                <a href="http://orfangenes.com/#/orfanBase" aria-label="Welcome"><span class="glyphicon glyphicon-search"></span><span class="mainnav_title hidden-xs">Search</span></a>
                             </li>
-                            <li class="" id="mainnav_welcome">
-                                <a href="http://orfangenes.com/#/orfanBase" aria-label="Welcome"><span class="glyphicon glyphicon-bookmark"></span><span class="mainnav_title hidden-xs">Visualize</span></a>
+                            <li class="" id="">
+                                <a href="http://orfangenes.com/#/orfanBase" aria-label="Welcome"><span class="glyphicon glyphicon-picture"></span><span class="mainnav_title hidden-xs">Visualize</span></a>
                             </li>
-                            <li class="" id="mainnav_welcome">
-                                <a href="http://orfangenes.com/#/input" aria-label="Welcome"><span class="glyphicon glyphicon-bookmark"></span><span class="mainnav_title hidden-xs">Analyze</span></a>
+                            <li class="" id="">
+                                <a href="http://orfangenes.com/#/input" aria-label="Welcome"><span class="glyphicon glyphicon-th"></span><span class="mainnav_title hidden-xs">Analyze</span></a>
+                            </li>
+                            <li class="" id="">
+                                <a href="" aria-label="Welcome"><span class="glyphicon glyphicon-download"></span><span class="mainnav_title hidden-xs">Download</span></a>
+                            </li>
+                            <li class="" id="">
+                                <a href="" aria-label="Welcome"><span class="glyphicon glyphicon-book"></span><span class="mainnav_title hidden-xs">Learn</span></a>
                             </li>
                         </ul>
                     </div>
@@ -308,30 +329,35 @@
                         <div class="panel_detailcontent" id="welcome_rcsb_panel">
                             <div class="col-xs-12 col-sm-5 col-md-6 col-lg-7">
                                 <h2 class="visible-xs">Welcome</h2>
-                                <h3>Section Title</h3>
+                                <h3>A Structural View of Biology</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    This resource is powered by the Protein Data Bank archive-information about the 3D shapes of proteins, nucleic acids, and complex assemblies that helps students and researchers understand all aspects of biomedicine and agriculture, from protein synthesis to health and disease.
                                 </p>
                                 
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-right: 2px;">
                                         <a href="">
-                                            <img src="https://placeholder.com/wp-content/uploads/2019/06/lorem-ipsum.png" class="img-responsive" style="margin-top: 0; margin-left: 0;" alt="" />
+                                            <img src="https://cdn.rcsb.org/news/2020/covid-half.png" class="img-responsive" style="margin-top: 0; margin-left: 0;" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-right: 2px;">
+                                        <a href="">
+                                            <img src="https://cdn.rcsb.org/news/2020/pdb50-half.png" class="img-responsive" style="margin-top: 0; margin-left: 0;" alt="" />
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-7 col-md-6 col-lg-5" id="HomepageMoleculeOfTheMonth">
-                                <h4>Featured Content</h4>
+                                <h4>August Molecule of the Month</h4>
                                 <div id="HomepageImage">
                                     <a href="">
                                         <img
                                             class="img-responsive"
-                                            src="https://lipsum.cafe/wp-content/uploads/2021/04/lorem-ipsum.jpg"
+                                            src="https://cdn.rcsb.org/pdb101/motm/images/6ahu_homepage-homepage.jpg"
                                         />
                                     </a>
                                 </div>
-                                <h5>Content subtitle</h5>
+                                <h5>Ribonuclease P</h5>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -345,7 +371,7 @@
                             <!-- TODO: NEED TO WORK ON EMDB - Short and Long images-->
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3>Whats New?</h3>
+                                    <h3>Latest Entries</h3>
                                     <span class="date hidden-xs hidden-sm">
                                         <a
                                             href="#" style="color: #fff !important;"
@@ -363,27 +389,27 @@
                                         </ol>
                                         <div class="carousel-inner center-block">
                                             <div class="item active">
-                                                <a href=""><img src="https://media.istockphoto.com/photos/group-portrait-of-a-creative-business-team-standing-outdoors-three-picture-id1146473249?k=6&m=1146473249&s=612x612&w=0&h=W1xeAt6XW3evkprjdS4mKWWtmCVjYJnmp-LHvQstitU=" data-src="" /></a>
+                                                <a href=""><img src="https://cdn.rcsb.org/images/structures/an/7anm/7anm_assembly-1.jpeg" data-src="" /></a>
                                                 <div class="feature_block">
-                                                    <a href=""><h3>Title</h3></a>
+                                                    <a href=""><h3>7ANM</h3></a>
                                                     <hr />
-                                                    <h5>Lorem ipsum dolor sit amet,didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+                                                    <h5>Nudaurelia capensis omega virus capsid: virus-like particles expressed in Nicotiana benthamiana</h5>
                                                 </div>
                                             </div>
                                             <div class="item">
-                                                <a href=""><img src="https://media.istockphoto.com/photos/group-portrait-of-a-creative-business-team-standing-outdoors-three-picture-id1146473249?k=6&m=1146473249&s=612x612&w=0&h=W1xeAt6XW3evkprjdS4mKWWtmCVjYJnmp-LHvQstitU=" data-src="" /></a>
+                                                <a href=""><img src="https://cdn.rcsb.org/images/structures/l7/7l7i/7l7i_assembly-1.jpeg" data-src="" /></a>
                                                 <div class="feature_block">
-                                                    <a href=""><h3>Title</h3></a>
+                                                    <a href=""><h3>7L7I</h3></a>
                                                     <hr />
-                                                    <h5>Lorem ipsum dolor sit amet,  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+                                                    <h5>Cryo-EM structure of Hsp90:FKBP51:p23 closed-state complex</h5>
                                                 </div>
                                             </div>
                                             <div class="item">
-                                                <a href=""><img src="https://media.istockphoto.com/photos/group-portrait-of-a-creative-business-team-standing-outdoors-three-picture-id1146473249?k=6&m=1146473249&s=612x612&w=0&h=W1xeAt6XW3evkprjdS4mKWWtmCVjYJnmp-LHvQstitU=" data-src="" /></a>
+                                                <a href=""><img src="https://cdn.rcsb.org/images/structures/d9/7d9p/7d9p_assembly-1.jpeg" data-src="" /></a>
                                                 <div class="feature_block">
-                                                    <a href=""><h3>Title</h3></a>
+                                                    <a href=""><h3>7D9P</h3></a>
                                                     <hr />
-                                                    <h5>Lorem ipsum dolor sit amet, didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+                                                    <h5>Crystal Structure of Recombinant Human Acetylcholinesterase in Complex with Compound 12</h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -395,7 +421,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-4" id="newfeatures">
                             <div class="panel panel-default">
-                                <div class="panel-heading"><h3>More Features</h3></div>
+                                <div class="panel-heading"><h3>Features & Highlights</h3></div>
                                 <div class="panel-body no-padding">
                                     <article>
                                         <div class="col-xs-12">
@@ -405,16 +431,34 @@
                                                         <img
                                                             class="news_img news_thumbnail img-thumbnail"
                                                             style="width: 100px;"
-                                                            src="data:image/jpeg;base64,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"
+                                                            src="https://cdn.rcsb.org/news/2021/homepage/d9skpflc_400x400.png"
                                                             
                                                         />
                                                     </a>
                                                 </div>
                                                 <div class="col-xs-9 min-LR-padding default-content-list">
                                                     <a href="">
-                                                        <h4 style="color: #337ab7;">Feature 1</h4>
+                                                        <h4 style="color: #337ab7;">PDB adopts a standard Creative Commons open source license </h4>
                                                     </a>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p>PDB data can be copied, modified, and distributed, even for commercial purposes, all without asking permission</p>
+                                                </div>
+                                            </div>
+                                            <div class="row eachFeatures">
+                                                <div class="col-xs-3 min-LR-padding">
+                                                    <a href="">
+                                                        <img
+                                                            class="news_img news_thumbnail img-thumbnail"
+                                                            style="width: 100px;"
+                                                            src="https://cdn.rcsb.org/news/2021/homepage/screenshot2021-07-12at4.30.35pm.png"
+                                                            
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-9 min-LR-padding default-content-list">
+                                                    <a href="">
+                                                        <h4 style="color: #337ab7;">Search by Funding</h4>
+                                                    </a>
+                                                    <p>Use Advanced Search to find structures by Funding Agency or Country</p>
                                                 </div>
                                             </div>
                                             <br />
@@ -451,14 +495,31 @@
                                                         <img
                                                             class="news_img news_thumbnail img-thumbnail"
                                                             style="width: 100px;"
-                                                            src="data:image/jpeg;base64,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"
+                                                            src="https://cdn.rcsb.org/news/2021/homepage/acs-truncated.png"
                                                         />
                                                     </a>
                                                 </div>
                                                 <div class="col-xs-9 min-LR-padding default-content-list">
-                                                    <h4><a href="#">News 1</a></h4>
+                                                    <h4><a href="#">PDB50 at ACS August 25</a></h4>
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        A symposium on Understanding Enzyme Function in 3D: Celebrating 50 Years of the Protein Data Bank will be held as part of the American Chemical Society Fall 2021 meeting
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-xs-3 min-LR-padding">
+                                                    <a href="#">
+                                                        <img
+                                                            class="news_img news_thumbnail img-thumbnail"
+                                                            style="width: 100px;"
+                                                            src="https://cdn.rcsb.org/news/2021/homepage/anti-cancer-icon1.png"
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-9 min-LR-padding default-content-list">
+                                                    <h4><a href="#">Impact of PDB Structures on Anti-Cancer Drug Approvals</a></h4>
+                                                    <p>
+                                                        Open access to PDB data facilitates discovery and development of life saving drugs.
                                                     </p>
                                                 </div>
                                             </li>
@@ -476,17 +537,12 @@
                     <div class="row">
                         <ul>
                             <li>
-                                <a class="hidden-print querySearchLink" href="">Link 1</a>
+                                <a class="hidden-print querySearchLink" href="">Structures of Human Sequences</a>
                             </li>
                             <li>
-                                <a class="hidden-print querySearchLink" href="">Link 2</a>
+                                <a class="hidden-print querySearchLink" href="">Nucleic Acid Containing Structures</a>
                             </li>
-                            <li>
-                                <a class="hidden-print querySearchLink" href="">Link 3</a>
-                            </li>
-                            <li>
-                                <a class="hidden-print querySearchLink" href="">Link 4</a>
-                            </li>
+                            <li class="hidden-print"><a class="btn btn-default btn-sm" href="" role="button">More Statistics</a></li>
                         </ul>
                     </div>
                 </article>
@@ -577,7 +633,7 @@
         <div id="footer_grant">
             <div class="container">
                 <div class="row">
-                    <p>
+                    <p style="margin-bottom: 0px;">
                         Copyright 2021
                     </p>
                 </div>
@@ -585,7 +641,7 @@
         </div>
         <div id="jira-fdbck">
             <!-- Contact Us button -->
-            <button type="button" class="btn btn-warning btn-xs pull-right jira-fdbck-btn hidden-print" id="contactus">Contact Us</button>
+            <button type="button" class="btn btn-warning btn-xs pull-right jira-fdbck-btn hidden-print" id="contactus" style="display: none;">Contact Us</button>
         </div>
         <script src="./RCSB PDB_ Homepage_files/search.min.js.download"></script>
         <script src="file:///C:/build/js/search.min.js?ts=2716341"></script>
