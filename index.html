@@ -3,15 +3,15 @@
     <head>
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <script type="text/javascript" async="" src="./RCSB PDB_ Homepage_files/analytics.js.download"></script>
+        <!-- <script type="text/javascript" async="" src="./RCSB PDB_ Homepage_files/analytics.js.download"></script>
         <script type="text/javascript" async="" src="./RCSB PDB_ Homepage_files/analytics.js(1).download"></script>
         <script type="text/javascript" async="" src="./RCSB PDB_ Homepage_files/js"></script>
         <script type="text/javascript" async="" src="./RCSB PDB_ Homepage_files/js(1)"></script>
-        <script type="text/javascript" async="" src="./RCSB PDB_ Homepage_files/analytics.js(2).download"></script>
-        <script src="./RCSB PDB_ Homepage_files/react.min.js.download"></script>
+        <script type="text/javascript" async="" src="./RCSB PDB_ Homepage_files/analytics.js(2).download"></script> -->
+        <!-- <script src="./RCSB PDB_ Homepage_files/react.min.js.download"></script>
         <script src="./RCSB PDB_ Homepage_files/reactDOM.min.js.download"></script>
         <script src="./RCSB PDB_ Homepage_files/search-data"></script>
-        <script src="./RCSB PDB_ Homepage_files/react-search.js.download"></script>
+        <script src="./RCSB PDB_ Homepage_files/react-search.js.download"></script> -->
         <title>Home</title>
         <link rel="stylesheet" href="./RCSB PDB_ Homepage_files/bootstrap.min.css" />
         <link rel="stylesheet" href="./RCSB PDB_ Homepage_files/glyph.less" />
@@ -20,30 +20,30 @@
         <link rel="stylesheet" href="./RCSB PDB_ Homepage_files/main.css" />
         <link rel="stylesheet" href="./RCSB PDB_ Homepage_files/search.css" />
         <script>
-            window.addEventListener(
-                "DOMContentLoaded",
-                function () {
-                    lazyImage.observeArray(document.querySelectorAll("img[data-src]"));
-                },
-                false
-            );
+            // window.addEventListener(
+            //     "DOMContentLoaded",
+            //     function () {
+            //         lazyImage.observeArray(document.querySelectorAll("img[data-src]"));
+            //     },
+            //     false
+            // );
 
-            window.addEventListener("load", function () {
-                // load the JIRA feedback button only after everything else has been loaded
-                var script = document.createElement("script");
-                script.src = "/js/jira-fdbck.js";
-                script.type = "text/javascript";
-                document.getElementsByTagName("head")[0].appendChild(script);
-                var link = document.createElement("link");
-                link.rel = "stylesheet";
-                link.href = "//cdn.rcsb.org/jira-feedback/css/jira-fdbck.css";
-                document.getElementsByTagName("head")[0].appendChild(link);
-                // load the ekko-lightbox css only after everything else has been loaded
-                var link = document.createElement("link");
-                link.rel = "stylesheet";
-                link.href = "/css/ekko-lightbox.css";
-                document.getElementsByTagName("head")[0].appendChild(link);
-            });
+            // window.addEventListener("load", function () {
+            //     // load the JIRA feedback button only after everything else has been loaded
+            //     var script = document.createElement("script");
+            //     script.src = "/js/jira-fdbck.js";
+            //     script.type = "text/javascript";
+            //     document.getElementsByTagName("head")[0].appendChild(script);
+            //     var link = document.createElement("link");
+            //     link.rel = "stylesheet";
+            //     link.href = "//cdn.rcsb.org/jira-feedback/css/jira-fdbck.css";
+            //     document.getElementsByTagName("head")[0].appendChild(link);
+            //     // load the ekko-lightbox css only after everything else has been loaded
+            //     var link = document.createElement("link");
+            //     link.rel = "stylesheet";
+            //     link.href = "/css/ekko-lightbox.css";
+            //     document.getElementsByTagName("head")[0].appendChild(link);
+            // });
         </script>
         <script src="./RCSB PDB_ Homepage_files/jquery-3.3.1.min.js.download"></script>
         <script src="./RCSB PDB_ Homepage_files/bootstrap.min.js.download"></script>
@@ -85,7 +85,7 @@
                     <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target="#navbar-collapse-RCSB">
                         <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">ORFanID</a>
+                    <a class="navbar-brand" href="#">ORFanBase</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse-RCSB" style="max-height: 420px;">
                     <ul class="nav navbar-nav pull-left">
@@ -110,9 +110,6 @@
                         </li>
                         <li class="dropdown" id="">
                             <a class="dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">Documentation</b></a>
-                        </li>
-                        <li class="dropdown" id="">
-                            <a class="dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">Careers</b></a>
                         </li>
                     </ul>
                 </div>
@@ -168,6 +165,12 @@
                 font-size: 12px;
                 line-height: 22px;
             }
+            .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
         </style>
         <div id="header">
             <div class="container">
@@ -181,7 +184,7 @@
                             >
                                 
                             </a>
-                            Biological Macromolecular Structures Enabling Breakthroughs in Research and Education
+                            <span style="font-weight: bold; font-size:1.6em;">Structures Enabling Breakthroughs in Research and Education</span> 
                         </h2>
                         <div class="clearfix"></div>
                     </div>
@@ -209,18 +212,19 @@
                 </div>
                 <ul class="hidden-xs hidden-print" id="PDBmembers">
                     <li>
-                        <a href=""><img id="" style="width: 95px;" src="https://cdn.rcsb.org/rcsb-pdb/v2/common/images/pdb101Logo.png" data-src="" alt="" /></a>
+                        <a href=""><img id="" style="height:55px;" src="ORFanBase.PNG" data-src="" alt="" /></a>
                     </li>
                     <li>
-                        <a href=""><img id="" style="width: 95px;" src="https://cdn.rcsb.org/rcsb-pdb/v2/common/images/Logo_NDB.png" data-src="" alt="" /></a>
+                        <a href="https://www.ncbi.nlm.nih.gov"><img id="" style="height:55px;" src="NCBI.jpg" data-src="" alt="" /></a>
                     </li>
                     <li>
-                        <a href=""><img id="" style="width: 95px;" src="https://cdn.rcsb.org/rcsb-pdb/v2/common/images/Logo_wwPDBFoundation.png" data-src="" alt="" /></a>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov"><img id="" style="height:55px;" src="pubmed-logo.jpg" data-src="" alt="" /></a>
                     </li>
                 </ul>
                 <ul class="fa-ul pdb50" style="right: 15px;">
                     <li>
-                        <a href="" rel="noopener" alt=""><img style="width: 300px;" src="https://cdn.rcsb.org/rcsb-pdb/v2/home/images/pdb50-branding/logo50-gold-long.svg" /></a>
+                        <a href="" rel="noopener" alt=""><img style="width:120px;height:120px" src="Profile_-_Genie.jpg" /></a>
+                        <h5>Little ORFan Genie</h5>
                     </li>
                 </ul>
                 <div id="socialmedia_section" style="display: none;">
@@ -274,6 +278,13 @@
                 }
                 .padRight {
                     padding-right: 10px;
+                    tex
+                }
+                .dev {
+                    color:whitesmoke;
+                }
+                .dev a:hover {
+                    color:#5e94c3
                 }
                 @media only screen and (max-width: 768px) {
                     .navy {
@@ -295,7 +306,7 @@
             <div class="row navy">
                 <div class="col-sm-4"></div>
                 <div class="col-md-8 col-sm-8 vertPosition alignRight">
-                    <span class="tagline padRight">Developers: Join the ORFanID Team</span><a class="btn btn-sm btn-info" href="" role="button">Explore Open Positions</a>
+                    <span class="tagline padRight">Developers: Explore the ORFanBase API<span></span></span>  <a class="btn btn-sm btn-info" style="margin-left: left 0.25em;;" href="" role="button">ORFanBase API</a></span>
                 </div>
             </div>
             <div id="homepage_panelslides">
@@ -329,26 +340,33 @@
                         <div class="panel_detailcontent" id="welcome_rcsb_panel">
                             <div class="col-xs-12 col-sm-5 col-md-6 col-lg-7">
                                 <h2 class="visible-xs">Welcome</h2>
-                                <h3>A Structural View of Biology</h3>
-                                <p>
-                                    This resource is powered by the Protein Data Bank archive-information about the 3D shapes of proteins, nucleic acids, and complex assemblies that helps students and researchers understand all aspects of biomedicine and agriculture, from protein synthesis to health and disease.
+                                <h3>ORFanBase</h3>
+                                <p style="text-align: justify">
+                                    ORFanBase is a comprehensive database of orphan genes and taxonomically restricted genes (TRGs) for investigators to explore the properties of these exceptional coding sequences in a genuinely comparative fashion, not limited to a handful of study groups, but globally across all domains of life and even viruses.
+                                </p>
+                                <p style="text-align: justify">
+                                    Sequences with limited taxonomic distribution which are also functionally essential to their species, represent a pattern wholly unexplored. We hope that through ORFanBase researchers would be able to find a rigorous analytical mathematical model for essential genes and proteins, so that we can estimate their probability of changing under known evolutionary processes.
+
                                 </p>
                                 
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-right: 2px;">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-right: 2px; padding-top: 2px;">
                                         <a href="">
-                                            <img src="https://cdn.rcsb.org/news/2020/covid-half.png" class="img-responsive" style="margin-top: 0; margin-left: 0;" alt="" />
+                                            <img src="background3.67a1112b.jpg" class="img-responsive" style=" min-height: 80px;margin-top: 0; margin-left: 0;" alt="" />
                                         </a>
+                                        <h4>Find ORFans: ORFanID</h4>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-right: 2px;">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="padding-right: 2px; padding-top: 2px;">
                                         <a href="">
-                                            <img src="https://cdn.rcsb.org/news/2020/pdb50-half.png" class="img-responsive" style="margin-top: 0; margin-left: 0;" alt="" />
+                                            <img src="InputPipeLine.PNG" class="img-responsive" style="margin-top: 0; margin-left: 0;" alt="" />
                                         </a>
+                                        <h4>ORFanBase Input Pipeline
+                                        </h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-7 col-md-6 col-lg-5" id="HomepageMoleculeOfTheMonth">
-                                <h4>August Molecule of the Month</h4>
+                                <h4>ORFan gene of the Month</h4>
                                 <div id="HomepageImage">
                                     <a href="">
                                         <img
@@ -556,7 +574,6 @@
                             <li><span class="row_header">About</span></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
                         </ul>
                         <ul class="col-xs-4 col-sm-12">
                             <li><span class="row_header">Help</span></li>
